@@ -1,0 +1,59 @@
+/* Attributes concerning navbar */
+.navbarFrame{
+    height: 65px;
+}
+
+
+/* Text attributes in navbar */
+.navbarText{
+    text-align:center;
+    font-size: 1.45em;
+}
+
+
+
+#MyImage {
+    position: relative;
+    margin: 20px auto 0;
+    width: 100%;
+    margin-top: -20px;
+}
+
+#homeBodyText{
+    position: absolute;
+    left: 48%;
+    bottom: 60px;
+    color:white
+}
+
+#theImage {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+#myButton {
+    position: absolute;
+    left: 49.5%;
+    bottom: 34px;   
+}
+
+
+.overlay {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: auto;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.7); /*can be anything, of course*/
+}
+
+footer {
+    box-shadow: 0px 500px 0px 500px #474545;
+}
+
+.footerBg { 
+      background-color: #474545; /* Black Gray */
+      color: #fff;
+  }
