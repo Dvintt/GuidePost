@@ -11,32 +11,34 @@
 }
 
 
-
-#MyImage {
-    position: relative;
-    margin: 20px auto 0;
-    width: 100%;
-    margin-top: -20px;
+.homeBG{
+     background-color: #264d73; /* Green */
 }
 
-#homeBodyText{
-    position: absolute;
-    left: 48%;
-    bottom: 60px;
-    color:white
+#homeTextBG{
+    color:ghostwhite;
+    text-align:center;
+    font-size: 2.5em;
+    margin-top:1em;
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-bottom: .5em;
+    font-family:"Georgia, serif";
 }
 
-#theImage {
-    display: block;
-    position: relative;
-    width: 100%;
-}
 #myButton {
-    position: absolute;
-    left: 49.5%;
-    bottom: 34px;   
+    
+    color: white;
+    background-color:#336699;
+    border-color: #336699;
+    margin-bottom: 20px;
+    font-size: 3em;
+    justify-content:center;
 }
 
+.centerWrapper {
+    text-align: center;
+}
 
 .overlay {
     z-index: 1;
@@ -55,5 +57,6 @@ footer {
 
 .footerBg { 
       background-color: #474545; /* Black Gray */
+      min-height:50px;
       color: #fff;
   }
