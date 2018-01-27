@@ -1,3 +1,42 @@
+/*--- NAV BAR ---*/
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fcfcfc; 
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: #6b6d74;
+    text-align: center;
+    font-size: 1.7em;
+    font-family:"Trebuchet MS", Helvetica, sans-serif ;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #e6e6e6;}
+
+
+ul.topnav li.right {
+  float: right;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
+/*--- NAV BAR ---*/
+
+
+
 /* Attributes concerning navbar */
 .navbarFrame{
     height: 65px;
