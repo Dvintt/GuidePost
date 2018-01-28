@@ -1,6 +1,6 @@
 /* Attributes concerning navbar */
 .navbarFrame{
-    height: 65px;
+
 }
 
 
@@ -10,6 +10,18 @@
     font-size: 1.45em;
 }
 
+/*
+.navstyle{
+	background-color: yellow;
+	padding-bottom: 2em;
+	padding-top: 3px;
+}
+*/
+
+.navElement{
+	float:right;
+	font-size: 30px;
+}
 
 .homeBG{
      background-color: #264d73; /* Green */
@@ -52,7 +64,15 @@
 }
 
 footer {
-    box-shadow: 0px 500px 0px 500px #474545;
+/*    box-shadow: 0px 500px 0px 500px #474545;*/
+/*	position:fixed;*/
+/*	left: 0;*/
+   	padding-bottom: 3px;
+	padding-top:3px;
+   	width: 100%;
+   	background-color: #474545;
+   	color: white;
+   	text-align: center;
 }
 
 .footerBg { 
