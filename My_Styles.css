@@ -1,6 +1,6 @@
 /* Attributes concerning navbar */
 .navbarFrame{
-    height: 63px;
+
 }
 
 
@@ -22,6 +22,7 @@
 	float:right;
 	font-size: 30px;
 }
+
 .homeBG{
      background-color: #264d73; /* Green */
 }
