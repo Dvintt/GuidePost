@@ -63,6 +63,76 @@
     background: rgba(0, 0, 0, 0.7); /*can be anything, of course*/
 }
 
+/* Background image for homePage(Signed in) */
+.bgIMG{
+    background-image: url(Pictures/HomePic3.jpeg);
+    width:100%;
+    height:100%;
+}
+
+/* Container for HomePage(Signed in) */
+.container{
+    margin:auto;
+    width:70%;
+    height: 900px;
+    border:.5px solid black;
+    border-top:0;
+    background-color:white;
+}
+
+.containerMSG{
+    width:500px;
+    height:600px;
+    border:.5px solid black;
+    padding:50px;
+    margin:50px;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    text-align:center;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: visible;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+/* Messenger container arrangement */
+.sideBySide{
+    display:flex;
+    margin:auto;
+    padding:50px;
+}
+
+
 footer {
 /*    box-shadow: 0px 500px 0px 500px #474545;*/
 /*	position:fixed;*/
