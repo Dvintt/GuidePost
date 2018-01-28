@@ -1,45 +1,6 @@
-/*--- NAV BAR ---*/
-ul.topnav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #fcfcfc; 
-}
-
-ul.topnav li {float: left;}
-
-ul.topnav li a {
-    display: block;
-    color: #6b6d74;
-    text-align: center;
-    font-size: 1.7em;
-    font-family:"Trebuchet MS", Helvetica, sans-serif ;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-ul.topnav li a:hover:not(.active) {background-color: #e6e6e6;}
-
-
-ul.topnav li.right {
-  float: right;
-  margin-right: 20px;
-  margin-left: 20px;
-}
-
-
-@media screen and (max-width: 600px){
-    ul.topnav li.right, 
-    ul.topnav li {float: none;}
-}
-/*--- NAV BAR ---*/
-
-
-
 /* Attributes concerning navbar */
 .navbarFrame{
-    height: 65px;
+
 }
 
 
@@ -49,6 +10,18 @@ ul.topnav li.right {
     font-size: 1.45em;
 }
 
+/*
+.navstyle{
+	background-color: yellow;
+	padding-bottom: 2em;
+	padding-top: 3px;
+}
+*/
+
+.navElement{
+	float:right;
+	font-size: 30px;
+}
 
 .homeBG{
      background-color: #264d73; /* Green */
@@ -91,7 +64,15 @@ ul.topnav li.right {
 }
 
 footer {
-    box-shadow: 0px 500px 0px 500px #474545;
+/*    box-shadow: 0px 500px 0px 500px #474545;*/
+/*	position:fixed;*/
+/*	left: 0;*/
+   	padding-bottom: 3px;
+	padding-top:3px;
+   	width: 100%;
+   	background-color: #474545;
+   	color: white;
+   	text-align: center;
 }
 
 .footerBg { 
