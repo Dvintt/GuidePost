@@ -24,24 +24,28 @@
         </div>
     </nav>
 
-    <div class="sideBySide">
-        
-        
-        <div class="containerMSG" style="width:700px">
-           <div class="titleMSG profileName" style="display:flex;padding:5px 10px;min-width:700px">
-            <div class="circle"></div>
-            <h2 style="margin-left: 35%;">User</h2>
-           
+    <div class="wrapper sideBySide ">
+        <div style="display:table-row">
+            <div id="cList">
+                <h2>Notifications</h2>
+                <div id="chatBox"></div>
             </div>
-            
+            <div>
+                <div id="msg">
+                    <h2 >User</h2>
+                    <div id="chatBox"></div>
+                    <form name="message" action="" style="text-align:center">
+                        <input name="usermsg" type="text" id="usermsg" size="63" />
+                        <input name="submitmsg" type="submit" id="submitmsg" value="Send" />
+                    </form>
+                </div>
+                <div id="sch" style="text-align:center">
+                    <h2>Schedule</h2>
+                    <div id="chatBox"></div>
+                </div>
+            </div>
         </div>
-
-        <div class="containerMSG">
-            <h2 class="titleMSG " style="text-align:center; min-width:499.6px;padding:5px 10px">Schedule</h2>
-        </div>
-
     </div>
-
 
     <footer>
         <p>GuidePost</p>

@@ -67,16 +67,13 @@
 
 
 /* Background image for homePage(Signed in) */
-
 .bgIMG {
     background-image: url(Pictures/HomePic3.jpeg);
-    width: 100%;
-    height: 100%;
+    background-size:cover;
 }
 
 
 /* Container for HomePage(Signed in) */
-
 .container {
     margin: auto;
     width: 70%;
@@ -127,12 +124,14 @@
 
 .tab button {
     background-color: inherit;
-    float: center;
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 15px 50px;
     transition: 0.3s;
+    color:#D4D4D4;
+    margin-right: 20px;
+    
 }
 
 
@@ -163,9 +162,12 @@
 /* Messenger container arrangement */
 
 .sideBySide {
-    display: flex;
-    margin: auto;
-    padding: 50px;
+    display:table;
+    width:100%;
+}
+
+.winJoined{
+    display: table-row;
 }
 
 footer {
@@ -186,3 +188,87 @@ footer {
     min-height: 50px;
     color: #fff;
 }
+
+
+.wrapper { 
+  border : 2px solid #000;
+  height:770px;
+  width:100%;
+  overflow:hidden;
+  background-image: url(Pictures/HomePic2.jpeg);      
+}
+
+.wrapper div {
+   min-height: 300px;
+   padding: 10px;
+}
+
+#cList{
+  width: 290px;
+  height:500px;
+  border-right:2px solid #000;
+  display: table-cell;
+  background-color:#37383E;
+  color: whitesmoke;
+}
+
+
+#msg {
+  background-color: lightgrey; 
+  width: 950px;
+  height:777px;
+  border-right:2px solid #000;
+  margin-top: 0px;
+  display: table-cell;
+  color:whitesmoke;
+  background-color: #37383E;
+}
+
+#chatBox{
+    text-align:left;
+    margin:0 auto;
+    margin-bottom:50px;
+    padding:10px;
+    background-color:white;
+    height: 80%;
+    width:95%;
+    border:1px solid #ACD8F0;
+    overflow:auto; 
+}
+
+.jWindows{
+    
+}
+
+
+#sch { 
+  background-color: #37383E;
+  overflow:hidden;
+  height:757px;
+  width:500px;
+  border:2px solid black;
+  display: table-cell;
+  color:whitesmoke;
+}
+
+@media screen and (max-width: 780px) {
+   #one { 
+    float: none;
+    margin-right:0;
+    width:705px;
+    border:0;
+    border:2px solid #000;    
+  }
+    #two{
+    float: none;
+    margin-right:0;
+    width:705px;
+    border:0;
+    border:2px solid #000; 
+    }
+
+
+}
+
+
+
