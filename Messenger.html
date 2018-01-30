@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <!-- Local CSS StyleSheet -->
-    <link rel="stylesheet" type="text/css" href="My_Styles.css">
+    <link rel="stylesheet" type="text/css" href="Messenger.css">
 
 </head>
 
@@ -24,25 +24,26 @@
         </div>
     </nav>
 
-    <div class="wrapper sideBySide ">
-        <div style="display:table-row">
-            <div id="cList">
-                <h2>Notifications</h2>
+    <div class="msgContainer">
+        <div id="cList">
+            <h2>Notifications</h2>
+            <div id="chatBox"></div>
+        </div>
+
+        <div style="margin-left:5%;margin-right:5%">
+            <div id="msg">
+                <h2>User</h2>
                 <div id="chatBox"></div>
+                <form action="#" method="post" style="text-align:center;width:100%">
+                    <div style="display:flex">
+                        <input name="usermsg" type="text" id="#" style="width:100%;height:50px" />
+                        <input name="submitmsg" type="submit" id="#" style="float:right" value="Send"/>
+                    </div>
+                </form>
             </div>
-            <div>
-                <div id="msg">
-                    <h2 >User</h2>
-                    <div id="chatBox"></div>
-                    <form name="message" action="" style="text-align:center">
-                        <input name="usermsg" type="text" id="usermsg" size="63" />
-                        <input name="submitmsg" type="submit" id="submitmsg" value="Send" />
-                    </form>
-                </div>
-                <div id="sch" style="text-align:center">
-                    <h2>Schedule</h2>
-                    <div id="chatBox"></div>
-                </div>
+            <div id="sch">
+                <h2 style="text-align:center">Schedule</h2>
+                <div id="chatBox"></div>
             </div>
         </div>
     </div>

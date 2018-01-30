@@ -1,0 +1,89 @@
+.msgContainer{
+    display:flex;
+    background-image:url(Pictures/HomePic2.jpeg);
+    height:875px;
+    width:100%;
+}
+
+
+#cList{
+  width: 290px;
+  height:inherit;
+  border-right:2px solid #000;
+  display: table-cell;
+  background-color:#37383E;
+  color: whitesmoke;
+}
+
+
+#chatBox{
+    text-align:left;
+    margin:0 auto;
+    background-color:white;
+    max-height 900px;
+    min-height:760px;
+    width:100%;
+    border:1px solid #ACD8F0;
+    overflow:auto; 
+}
+
+
+#msg {
+  background-color: lightgrey; 
+  width: 950px;
+  height:inherit;
+  border-right:2px solid #000;
+  margin-top: 0px;
+  display: table-cell;
+  color:whitesmoke;
+  background-color: #37383E;
+}
+
+
+
+#sch { 
+  background-color: #37383E;
+  overflow:hidden;
+  height:inherit;
+  width:500px;
+  border-right:2px solid black;
+  display: table-cell;
+  color:whitesmoke;
+}
+
+@media screen and (max-width: 780px) {
+   #one { 
+    float: none;
+    margin-right:0;
+    width:705px;
+    border:0;
+    border:2px solid #000;    
+  }
+    #two{
+    float: none;
+    margin-right:0;
+    width:705px;
+    border:0;
+    border:2px solid #000; 
+    }
+
+}
+
+footer {
+    /*    box-shadow: 0px 500px 0px 500px #474545;*/
+    /*	position:fixed;*/
+    /*	left: 0;*/
+    padding-bottom: 3px;
+    padding-top: 3px;
+    width: 100%;
+    background-color: #474545;
+    color: white;
+    text-align: center;
+}
+
+.footerBg {
+    background-color: #474545;
+    /* Black Gray */
+    min-height: 50px;
+    color: #fff;
+}
