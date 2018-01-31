@@ -1,15 +1,17 @@
 #pageContainer{
     min-height: 100vh;
-    background-color:aliceblue;
+    background-color:#474545;
+    background-image: url(Pictures/HomePic3.jpeg);
+    width:100%;
 }
 
 
 #profileContainer{
     height:100%;
     display:flex;
-    margin-right:75px;
-    margin-left:75px;
-    background-color:whitesmoke;
+    margin-right:50px;
+    margin-left:50px;
+    background-color: white;
 }
 
 
@@ -23,7 +25,7 @@
 
 
 .profileBlock{
-    color: gainsboro;
+    color: black;
     font-family: Tahoma, Geneva, sans-serif;
     margin-top:20px;
     margin-left:50px;
@@ -60,8 +62,8 @@ footer {
     margin: auto;
     width: 95%;
     height: 900px;
-   
     border-top: 0;
+    border:.5px solid lightgrey;
     background-color: white;
 }
 
@@ -86,8 +88,8 @@ footer {
     padding: 8px;
     transition: 0.3s;
     color:#D4D4D4;
-    margin-right: 100px;
-    margin-left:100px;
+    margin-right: 50px;
+    margin-left:50ppx;
     
 }
 
