@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GuidePost</title>
+    <meta charset="utf-8">
+
+    <!-- W3 CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- Local CSS StyleSheet -->
+    <link rel="stylesheet" type="text/css" href="My_Styles.css">
+
+</head>
+
+<body class="bgIMG">
+
+    <!--New Nav-->
+    <nav class="navbarFrame">
+        <div class="w3-bar w3-light-grey w3-large">
+            <a href="#" class="w3-bar-item w3-button w3-right">Log out</a>
+            <a href="#" class="w3-bar-item w3-button w3-right">Messenger</a>
+            <a href="#" class="w3-bar-item w3-button w3-right">About</a>
+            <a href="#" class="w3-bar-item w3-button w3-right">Home</a>
+        </div>
+    </nav>
+
+    
+        <div class="container" style="margin-top:30px;margin-bottom:30px">
+
+            <!-- Inner Tab -->
+            <div class="tab" style="background-color:#37383E">
+                <button class="tablinks" onclick="openTab(event, 'yourTour')">Your Tours</button>
+                <button class="tablinks" onclick="openTab(event, 'Feed')">Feed</button>
+                <button class="tablinks" onclick="openTab(event, 'planTour')">Planned Tour</button>
+            </div>
+
+            <!-- Inner Tab Content -->
+            <div id="yourTour" class="tabcontent" style="text-align:center;margin-top:30%">
+                <h3>You don't Have any tours planned!</h3>
+                <button id="myButton">
+                 Start here 
+                </button>
+            </div>
+
+        </div>
+   
+
+    <footer>
+        <p>GuidePost</p>
+    </footer>
+
+</body>
+
+</html>
