@@ -1,0 +1,47 @@
+#profileContainer{
+    display:flex;
+    margin-right:300px;
+    margin-left:300px;
+    background-color:cadetblue;
+}
+
+
+
+#profilePic{
+    height:50%;
+    width:50%;
+    background-color:lightgray;
+}
+
+
+
+.profileBlock{
+    color: gainsboro;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+
+.infoBlock{
+    color:gainsboro;
+    margin:auto;
+}
+
+
+
+footer {
+    padding-bottom: 3px;
+    padding-top: 3px;
+    width: 100%;
+    background-color: #474545;
+    color: white;
+    text-align: center;
+    bottom:0;
+    position:absolute;
+}
+
+.footerBg {
+    background-color: #474545;
+    /* Black Gray */
+    min-height: 50px;
+    color: #fff;
+}
