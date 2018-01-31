@@ -15,14 +15,17 @@
   			<a href="#" class="w3-bar-item w3-button w3-right">Home</a>
 		</div>
 	</nav>
-    <div>
-        <img src="Pictures/Signin1.png" style="width:100%; margin-top: -20px" />
-    </div>
+
+	<div class="container">
+	  <img src="Pictures/Signin1.png" style="width:100%; margin-top: -20px" id = "top"/>
+	  <div class="centered">Start your trip with GuidePost</div>
+	</div>
 	
-	<div style="background-color:bisque;">
-		<div class="inputFrame">
+	<div>
+		<div class="inputFrame" style="border-color: #d1e0e0">
 			<h2>SIGN UP</h2>
 			<form action="/action_page.php">
+				<p class="goLeft">If already registered sign in below!</p>
 				<label for="username">User name:</label><br>
 				<input type="text" name="username">
 				<br>
@@ -34,20 +37,27 @@
 				<br><br>
 				<input type="submit" value="Submit">
 				<br><br>
-			</form>
+			</form>			
 		</div>
 	</div>
-
-	<h2>SIGN IN</h2>
-	<form action="/action_page.php">
-		<label for="email or name">Email or User name:</label><br>
-		<input type="text" name="email or name">
-		<br>
-		<label for="password">Password:</label><br>
-		<input type="text" name="password">
-		<br><br>
-		<input type="submit" value= "Submit">
-</form>
+	<div>
+		<div class="inputFrame" style="border-color:#ffc2b3;">
+		<h2>SIGN IN</h2>
+		<form action="/action_page.php">
+<!--			<img src="Pictures/Signup.png" style="width:35%;float:left;" class= "goLeft"/>-->
+			<label for="email/User name">Email or User name:</label><br>
+			<input type="text" name="email or name">
+			<br>
+			<label for="password">Password:</label><br>
+			<input type="text" name="password">
+			<br><br>
+			<input type="submit" value= "Submit"><br><br>
+		</form>
+		</div>
+	</div>
 </body>
+<footer class="container-fluid footerBg">
+	<p style="text-align:center">GuidePost</p>
+</footer>
 </html>
 
