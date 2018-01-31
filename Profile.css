@@ -1,15 +1,22 @@
+#pageContainer{
+    min-height: 100vh;
+    background-color:aliceblue;
+}
+
+
 #profileContainer{
+    height:100%;
     display:flex;
-    margin-right:300px;
-    margin-left:300px;
-    background-color:cadetblue;
+    margin-right:75px;
+    margin-left:75px;
+    background-color:whitesmoke;
 }
 
 
 
 #profilePic{
-    height:50%;
-    width:50%;
+    height: 260px;
+    width: 285px;
     background-color:lightgray;
 }
 
@@ -18,12 +25,16 @@
 .profileBlock{
     color: gainsboro;
     font-family: Tahoma, Geneva, sans-serif;
+    margin-top:20px;
+    margin-left:50px;
 }
 
 
 .infoBlock{
     color:gainsboro;
-    margin:auto;
+    margin-left: 105px;
+    margin-right: 50px;
+    width:100%;
 }
 
 
@@ -36,7 +47,6 @@ footer {
     color: white;
     text-align: center;
     bottom:0;
-    position:absolute;
 }
 
 .footerBg {
@@ -45,3 +55,62 @@ footer {
     min-height: 50px;
     color: #fff;
 }
+
+.container {
+    margin: auto;
+    width: 95%;
+    height: 900px;
+   
+    border-top: 0;
+    background-color: white;
+}
+
+/* Style the tab */
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding-bottom:5px;
+}
+
+
+/* Style the buttons that are used to open the tab content */
+
+.tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px;
+    transition: 0.3s;
+    color:#D4D4D4;
+    margin-right: 100px;
+    margin-left:100px;
+    
+}
+
+
+/* Change background color of buttons on hover */
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+
+/* Style the tab content */
+
+.tabcontent {
+    display: visible;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
