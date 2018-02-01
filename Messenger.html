@@ -18,9 +18,10 @@
     <!--New Nav-->
     <nav class="navbarFrame">
         <div class="w3-bar w3-light-grey w3-large">
-            <a href="#" class="w3-bar-item w3-button w3-right">Log out</a>
-            <a href="#" class="w3-bar-item w3-button w3-right">About</a>
-            <a href="#" class="w3-bar-item w3-button w3-right">Home</a>
+            <a href="Home_NotRegistered.html" class="w3-bar-item w3-button w3-right">Log out</a>
+            <a href="Schedule.html" class="w3-bar-item w3-button w3-right">Schedule Maker</a>
+            <a href="Profile.html" class="w3-bar-item w3-button w3-right">Profile</a>
+            <a href="Home_Registered.html" class="w3-bar-item w3-button w3-right">Home</a>
         </div>
     </nav>
 
@@ -30,20 +31,20 @@
             <div id="chatBox"></div>
         </div>
 
-        <div style="margin-left:5%;margin-right:5%">
+        <div style="margin-left:5%;margin-right:5%;display:flex">
             <div id="msg">
                 <h2>User</h2>
-                <div id="chatBox"></div>
+                <div class="chatBox"></div>
                 <form action="#" method="post" style="text-align:center;width:100%">
                     <div style="display:flex">
                         <input name="usermsg" type="text" id="#" style="width:100%;height:50px" />
-                        <input name="submitmsg" type="submit" id="#" style="float:right" value="Send"/>
+                        <input name="submitmsg" type="submit" id="#2" style="float:right" value="Send"/>
                     </div>
                 </form>
             </div>
             <div id="sch">
                 <h2 style="text-align:center">Schedule</h2>
-                <div id="chatBox"></div>
+                <div class="chatBox"></div>
             </div>
         </div>
     </div>
