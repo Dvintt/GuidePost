@@ -1,6 +1,6 @@
 /* Attributes concerning navbar */
 .navbarFrame{
-
+    height: 63px;
 }
 
 
@@ -22,7 +22,6 @@
 	float:right;
 	font-size: 30px;
 }
-
 .homeBG{
      background-color: #264d73; /* Green */
 }
@@ -38,8 +37,7 @@
     font-family:"Georgia, serif";
 }
 
-#myButton {
-    
+#myButton {   
     color: white;
     background-color:#336699;
     border-color: #336699;
