@@ -160,3 +160,16 @@ footer {
     min-height: 50px;
     color: #fff;
 }
+
+
+.button {
+    background-color: #264d73; /* Green */
+    border: 1px solid grey;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+}

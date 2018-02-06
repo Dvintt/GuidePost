@@ -78,11 +78,11 @@
     
 }
 
-tourImg{
+.tourImg{
     overflow: auto;    
 }
 
-tourImg span{
+.tourImg span{
     float: left;
     margin-top: 10px;
     margin-left: 10px;
@@ -93,7 +93,7 @@ tourImg span{
     font-size:1em
 }
 
-tourImg img{
+.tourImg img{
     float: left;
     width: 42%; 
     height: 300px; 

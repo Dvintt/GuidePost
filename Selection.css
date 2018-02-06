@@ -78,11 +78,11 @@
     
 }
 
-selectImg{
+.selectImg{
     overflow: auto;    
 }
 
-selectImg span{
+.selectImg span{
     float: left;
     margin-top: 10px;
     margin-left: 8%;
@@ -93,7 +93,7 @@ selectImg span{
     font-size:1em;
 }
 
-selectImg img{
+.selectImg img{
     float: right;
     width: 42%; 
     height: 300px; 
@@ -126,4 +126,30 @@ footer {
     /* Black Gray */
     min-height: 50px;
     color: #fff;
+}
+
+
+
+
+
+.textLeft{
+    margin-top: 10px;
+    margin-left: 8%;
+    color: white; 
+    text-align: center; 
+    width: 37%;
+    margin-right: 3%;
+    font-size:1em;
+}
+
+.imgRight{
+    
+    margin-top: 10px;
+    margin-left: 10px;
+    color: white; 
+/*    text-align: left; */
+    width: 45%;
+    height:45%;
+    font-size:1em;
+        
 }
