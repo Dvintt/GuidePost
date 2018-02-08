@@ -11,16 +11,37 @@
 
 <body>
 	<script src="Tester.js"></script>
-	
-		<div id="chatC" style="width:500px;height:500px;overflow:auto">
+	<div style="display:flex">
+		<div>
+			<div id="chatC" style="width:500px;height:500px;overflow:auto">
 
-		</div>
-		<div style="display:flex;margin:auto">
-			<input type="text" placeholder="Type text" id="num1">
+			</div>
+			<div style="display:flex;margin:auto">
+				<input type="text" placeholder="Type text" id="num1">
 
-			<button onclick="myFunction()">submit</button>
+				<button onclick="myFunction()">submit</button>
+			</div>
 		</div>
-	
+
+		<div>
+			<div style="margin-bottom:20px">
+				<div id="list" style="width:500px;height:500px;overflow:auto">
+				
+				</div>
+				
+				
+				<ul>
+					<li><input type="text" placeholder="Date" id="in1"></li>
+					<li><input type="text" placeholder="Time" id="in2"></li>
+					<li><input type="text" placeholder="Location" id="in3"></li>
+				</ul>
+				<input type="text" placeholder="Description" id="in4"><br><br>
+				<button onclick="newList()" id="addList">add</button>
+			</div>
+			
+		</div>
+
+	</div>
 </body>
 
 </html>
