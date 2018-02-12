@@ -26,10 +26,10 @@
 		<div>
 			<div style="margin-bottom:20px">
 				<div id="list" style="width:500px;height:500px;overflow:auto">
-				
+
 				</div>
-				
-				
+
+
 				<ul>
 					<li><input type="text" placeholder="Date" id="in1"></li>
 					<li><input type="text" placeholder="Time" id="in2"></li>
@@ -38,7 +38,35 @@
 				<input type="text" placeholder="Description" id="in4"><br><br>
 				<button onclick="newList()" id="addList">add</button>
 			</div>
-			
+
+		</div>
+		<div>
+			<p>Traveling made <span id="ch"> </span></p>
+		</div>
+	</div>
+
+	<div>
+		<!-- Tab links -->
+		<div class="tab">
+			<button class="tablinks" onclick="openCity(event, 'London')">London</button>
+			<button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+			<button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+		</div>
+
+		<!-- Tab content -->
+		<div id="London" class="tabcontent">
+			<h3>London</h3>
+			<p>London is the capital city of England.</p>
+		</div>
+
+		<div id="Paris" class="tabcontent">
+			<h3>Paris</h3>
+			<p>Paris is the capital of France.</p>
+		</div>
+
+		<div id="Tokyo" class="tabcontent">
+			<h3>Tokyo</h3>
+			<p>Tokyo is the capital of Japan.</p>
 		</div>
 
 	</div>
