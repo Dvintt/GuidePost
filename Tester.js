@@ -6,15 +6,23 @@ function myFunction() {
 	newMsg = document.createElement("P");
 	inputText = document.getElementById("num1").value;
 	outputText = document.createTextNode(inputText);
-
+	profilePic = document.createElement("DIV");
+	newCont = document.createElement("DIV");
+	
+	profilePic.className = "profilePic";
+	newCont.style.display = "flex";
+	
 	/* Appending user information to new element*/
 	newMsg.appendChild(outputText);
 
 	/* Giving <p> a new class */
 	newMsg.className = "chatBox";
+	
+	newCont.appendChild(profilePic);
+	newCont.appendChild(newMsg);
 
 	/* Adding Elements to new Div and pushing it to the list div in html */
-	document.getElementById("chatC").appendChild(newMsg);
+	document.getElementById("chatC").appendChild(newCont);
 
 	/*Resetting Fields */
 	document.getElementById("num1").value = "";
@@ -23,7 +31,7 @@ function myFunction() {
 /* Add List to schedule Box */
 function newList() {
 	"use strict";
-	var newDate, newTime, newLoc, newDesc, newCont, inDate, inTime, inLoc, inDesc;
+	var newDate, newTime, newLoc, newDesc, newCont, inDate, inTime, inLoc, inDesc , idNum;
 
 	/* Creating new elements */
 	newDate = document.createElement("P");
@@ -31,7 +39,9 @@ function newList() {
 	newLoc = document.createElement("P");
 	newDesc = document.createElement("P");
 	newCont = document.createElement("DIV");
-
+	removeBtn = document.createElement("BUTTON");
+	
+	
 	/* Assigning Div a new class */
 	newCont.className = "schBox";
 
@@ -52,6 +62,7 @@ function newList() {
 	newCont.appendChild(newTime);
 	newCont.appendChild(newLoc);
 	newCont.appendChild(newDesc);
+	newCont.appendChild(removeBtn);
 	document.getElementById("list").appendChild(newCont);
 
 	/*Resetting Fields */
