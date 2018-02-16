@@ -10,10 +10,11 @@
 
     <!-- Local CSS StyleSheet -->
     <link rel="stylesheet" type="text/css" href="Profile.css">
+	<script src="Login.js"></script>
 
 </head>
 
-<body>
+<body onload="updateUser()">
 
     <!--New Nav-->
     <nav class="navbarFrame">
@@ -28,14 +29,34 @@
         <div id="profileContainer">
             <div class="profileBlock">
                 <div id="profilePic"></div>
+                <div style="color:dimgray">
+				<form>
+				  <p id = "profile">User Name</p>
+					Language: <span id="showl"></span><br>
+				  <input type="text" name="language" id="language">
+				  <button type="button" onclick="saveLanguage()">Save</button><br>
+					
+				  Location: <span id="showlocation"></span><br><br>
+				  <input type="text" name="location" id="location">
+				  <button type="button" onclick="saveLocation()">Save</button><br><br>
+					
+				  Tour Guide Certification: <span id="showtg"></span><br>
+				  <select id="tg">
+					<option value="yes">Yes</option>
+					<option value="no">No</option>
+				  </select>
+				  <button type="button" onclick="saveTg()">Save</button>
+				
+				</form>
                 
-                
-                    <h1>User's Name</h1>
-                    <div style="color:dimgray">
+<!--
+                    <h1 id="profile">User's Name</h1>
+                    
                         <h3>Languages:</h3>
                         <h3>Location:</h3>
                         <h3>Tour Guide:</h3>
                         <h3 style="margin-top:90px;">About me:</h3>
+-->
                     </div>
                 
             </div>
