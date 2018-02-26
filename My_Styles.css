@@ -1,4 +1,8 @@
-/****************** CSS PAGE FOR HOME(NOTREGISTERED/SIGNED IN) **********************/
+
+/* Attributes concerning navbar */
+.navbarFrame{
+    height: 63px;
+}
 
 /* Text attributes in navbar */
 
@@ -21,11 +25,11 @@
 	font-size: 30px;
 }
 
-.homeBG {
-	background-color: #397B9E;
-	/* Green */
-}
 
+.homeBG{
+     background-color: #264d73; /* Green */
+
+  
 .homeBanner{
 	background-image:url(Pictures/HomeBanner2.jpg);
 	width:100%;
@@ -56,6 +60,7 @@
 	margin-bottom: .5em;
 	font-family: "Georgia, serif";
 }
+
 
 #myButton {
 	color: white;
