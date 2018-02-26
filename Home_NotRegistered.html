@@ -2,42 +2,58 @@
 <html>
 
 <head>
-    <title>GuidePost</title>
-    <meta charset="utf-8">
+	<title>GuidePost</title>
+	<meta charset="utf-8">
 
 	<!-- W3 CSS -->
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-    <!-- Local CSS StyleSheet -->
-    <link rel="stylesheet" type="text/css" href="My_Styles.css">
+	<!-- Local CSS StyleSheet -->
+	<link rel="stylesheet" type="text/css" href="My_Styles.css">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 </head>
 
 <body>
-
-    <!--New Nav-->
-	<nav class = "navbarFrame">
-		<div class="w3-bar w3-light-grey w3-large">
-			<a href="login.html" class="w3-bar-item w3-button w3-right">Sign in</a>
-  			<a href="#" class="w3-bar-item w3-button w3-right">Home</a>
-		</div>
-	</nav>
-
-   <div class="container-fluid homeBG ">
-        <img src="Pictures/homePicture.png" alt="homePIC" style="width:100%" />
-        <p style="color:white;text-align:center;font-size:3em">GuidePost</p>
-        <p id="homeTextBG">Traveling just got easier. Hire a Tour Guide to help plan and navigate your journey! Or become a Tourguide yourself and show clients the best your City/Country has to offer!</p>
-
-        <div class="centerWrapper">
-            <a href="login.html" class="button">
+	<div class="container-fluid homeBanner">
+		<!--New Nav-->
+		<nav class="navbarFrame">
+			<div class="w3-bar w3-large" style="color:white">
+				<a href="login.html" class="w3-bar-item w3-button w3-right">Sign in</a>
+				<a href="#" class="w3-bar-item w3-button w3-right">Home</a>
+			</div>
+		</nav>
+		<div class="container-fluid" style="padding-top:185px">
+			<p id="textBanner"><span style="color:#FFC96D">G</span>uide<span style="color:#FFC96D">P</span>ost</p>
+			<div class="centerWrapper" style="padding-top:50px">
+				<a href="login.html" class="button">
                 Register         
                 </a>
-        </div>
-    </div>
-    
-<footer>
-	<p>GuidePost</p>
-</footer>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid homeBG">
+		<p style="color:white;text-align:center;font-size:6em">Traveling Made <span style="color:#FFC96D">Easier</span></p><br>
+
+		<div class="container-fluid" style="padding:20px;">
+			<div class="row">
+				<div class="col-sm-6 col-md-6">
+					<p id="descBanner">Traveling just got easier. Hire a Tour Guide to help plan and navigate your journey! Or become a Tourguide yourself and show clients the best your City/Country has to offer!</p>
+				</div>
+				<div class="col-sm-6 col-md-6">
+					<img src="Pictures/bannerIcon.png" alt="BannerIcon" border="0" style="width:75%">
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+	<footer>
+		<p>GuidePost</p>
+	</footer>
 
 </body>
 

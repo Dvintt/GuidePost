@@ -2,57 +2,80 @@
 <html>
 
 <head>
-    <title>GuidePost</title>
-    <meta charset="utf-8">
+	<title>GuidePost</title>
+	<meta charset="utf-8">
 
-    <!-- W3 CSS -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<!-- W3 CSS -->
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-    <!-- Local CSS StyleSheet -->
-    <link rel="stylesheet" type="text/css" href="Messenger.css">
+	<!-- Local CSS StyleSheet -->
+	<link rel="stylesheet" type="text/css" href="Messenger.css">
 
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
 <body>
+	<script src="Msg.js"></script>
+	<!--New Nav-->
+	<nav class="navbarFrame">
+		<div class="w3-bar w3-light-grey w3-large">
+			<a href="Home_NotRegistered.html" class="w3-bar-item w3-button w3-right">Log out</a>
+			<a href="Schedule.html" class="w3-bar-item w3-button w3-right">Schedule Maker</a>
+			<a href="Profile.html" class="w3-bar-item w3-button w3-right">Profile</a>
+			<a href="Home_Registered.html" class="w3-bar-item w3-button w3-right">Home</a>
+		</div>
+	</nav>
 
-    <!--New Nav-->
-    <nav class="navbarFrame">
-        <div class="w3-bar w3-light-grey w3-large">
-            <a href="Home_NotRegistered.html" class="w3-bar-item w3-button w3-right">Log out</a>
-            <a href="Schedule.html" class="w3-bar-item w3-button w3-right">Schedule Maker</a>
-            <a href="Profile.html" class="w3-bar-item w3-button w3-right">Profile</a>
-            <a href="Home_Registered.html" class="w3-bar-item w3-button w3-right">Home</a>
-        </div>
-    </nav>
+	<div class="msgContainer">
+		<div class="container-fluid">
+			<div class="row" style="min-height:100%">
+				<!-- Notifications -->
+				<div class="col-sm-2 col-md-2 cList" style="padding-bottom:0px">
+					<h3>Notifications</h3>
+					<div style="display:flex;height:819px">
+						<div class="profilePic"></div>
+						<h4>Tour Guide</h4>
+					</div>
 
-    <div class="msgContainer">
-        <div id="cList">
-            <h2>Notifications</h2>
-            <div id="chatBox"></div>
-        </div>
+				</div>
 
-        <div style="margin-left:5%;margin-right:5%;display:flex">
-            <div id="msg">
-                <h2>User</h2>
-                <div class="chatBox"></div>
-                <form action="#" method="post" style="text-align:center;width:100%">
-                    <div style="display:flex">
-                        <input name="usermsg" type="text" id="#" style="width:100%;height:50px" />
-                        <input name="submitmsg" type="submit" id="#2" style="float:right" value="Send"/>
-                    </div>
-                </form>
-            </div>
-            <div id="sch">
-                <h2 style="text-align:center">Schedule</h2>
-                <div class="chatBox"></div>
-            </div>
-        </div>
-    </div>
+				<!-- Messenger -->
+				<div class="col-sm-6 col-md-6 msg">
+					<h3 style="color: whitesmoke">Messenger</h3>
+					<div id="chatBox" style="overflow:auto"></div>
+					<div style="display:flex">
+						<input type="text" placeholder="Type text" id="num1" style="width:100%;height:50px">
 
-    <footer>
-        <p>GuidePost</p>
-    </footer>
+						<button onclick="myFunction()">submit</button>
+					</div>
+				</div>
+
+				<!-- Scheduler -->
+				<div class="col-sm-4 col-md-4 sch" style="padding-bottom:20px;">
+					<h3 style="text-align:center;color: whitesmoke;">Scheduler</h3>
+					<div id="list" style="height:605px;overflow:auto;background-color:white">
+					</div>
+
+					<ul style="text-align:center">
+						<li><input type="text" placeholder="Date" id="in1"></li>
+						<li><input type="text" placeholder="Time" id="in2"></li>
+						<li><input type="text" placeholder="Location" id="in3"></li>
+						<li><input type="text" placeholder="Description" id="in4" style="height:60px"></li>
+					</ul>
+					<br>
+					<button onclick="newList()" id="addList" style="display:block;margin:0 auto">add</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<footer>
+		<p>GuidePost</p>
+	</footer>
 
 </body>
 
 </html>
+

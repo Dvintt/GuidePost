@@ -6,32 +6,30 @@ function myFunction() {
 	newMsg = document.createElement("P");
 	inputText = document.getElementById("num1").value;
 	outputText = document.createTextNode(inputText);
-	profilePic = document.createElement("DIV");
-	newCont = document.createElement("DIV");
-	
-	profilePic.className = "profilePic";
-	newCont.style.display = "flex";
-	
+
 	/* Appending user information to new element*/
 	newMsg.appendChild(outputText);
 
 	/* Giving <p> a new class */
-	newMsg.className = "chatBox";
-	
-	newCont.appendChild(profilePic);
-	newCont.appendChild(newMsg);
+	newMsg.className = "chatFrame";
 
 	/* Adding Elements to new Div and pushing it to the list div in html */
-	document.getElementById("chatC").appendChild(newCont);
+	document.getElementById("chatBox").appendChild(newMsg);
 
 	/*Resetting Fields */
 	document.getElementById("num1").value = "";
 }
 
+function Remove(form_id) { 
+        var f = document.getElementById(form_id);
+        f.parentNode.removeChild(f); 
+}
+
+
 /* Add List to schedule Box */
 function newList() {
 	"use strict";
-	var newDate, newTime, newLoc, newDesc, newCont, inDate, inTime, inLoc, inDesc , idNum;
+	var newDate, newTime, newLoc, newDesc, newCont, inDate, inTime, inLoc, inDesc, removeBtn , btnText , idNUM , idTxt;
 
 	/* Creating new elements */
 	newDate = document.createElement("P");
@@ -39,23 +37,32 @@ function newList() {
 	newLoc = document.createElement("P");
 	newDesc = document.createElement("P");
 	newCont = document.createElement("DIV");
-	removeBtn = document.createElement("BUTTON");
+	idNUM = Math.floor((Math.random() * 100) + 1);
+	idTxt = "Remove("+idNUM+ ")";
 	
+	/* Setting custom id for div content */
+	newCont.setAttribute("id",idNUM);
+
+	/*Creating remove button */
+	removeBtn = document.createElement("BUTTON");	
+	removeBtn.setAttribute("onclick", idTxt );
 	
 	/* Assigning Div a new class */
-	newCont.className = "schBox";
+	newCont.className = "schFrame";
 
 	/* Creating new textNodes based on user input */
 	inDate = document.createTextNode("Date: " + document.getElementById("in1").value);
 	inTime = document.createTextNode("Time: " + document.getElementById("in2").value);
 	inLoc = document.createTextNode("Loc: " + document.getElementById("in3").value);
-	inDesc = document.createTextNode("Description: " + document.getElementById("in4").value);
-
+	inDesc = document.createTextNode("Description: " + document.getElementById("in4").value);	
+	btnText = document.createTextNode("Remove");
+		
 	/* Appending user information to new elements */
 	newDate.appendChild(inDate);
 	newTime.appendChild(inTime);
 	newLoc.appendChild(inLoc);
-	newDesc.appendChild(inDesc);
+	newDesc.appendChild(inDesc);	
+	removeBtn.appendChild(btnText);
 
 	/* Adding Elements to new Div and pushing it to the list div in html */
 	newCont.appendChild(newDate);
@@ -63,6 +70,7 @@ function newList() {
 	newCont.appendChild(newLoc);
 	newCont.appendChild(newDesc);
 	newCont.appendChild(removeBtn);
+	
 	document.getElementById("list").appendChild(newCont);
 
 	/*Resetting Fields */
@@ -72,28 +80,3 @@ function newList() {
 	document.getElementById("in4").value = "";
 
 }
-
-
-function openCity(evt, cityName) {
-    // Declare all variables
-    var i, tabcontent, tablinks;
-
-    // Get all elements with class="tabcontent" and hide them
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-
-    // Get all elements with class="tablinks" and remove the class "active"
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-
-    // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-
-
-
