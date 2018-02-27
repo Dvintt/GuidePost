@@ -6,6 +6,8 @@
 	<!-- Local CSS StyleSheet -->
     <link rel="stylesheet" type="text/css" href="login.css">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script src="Login.js"></script>
+
 </head>
 <body>
 	<nav class = "navbarFrame">
@@ -23,34 +25,38 @@
 	<div>
 		<div class="inputFrame" style="border-color: #d1e0e0">
 			<h2>SIGN UP</h2>
-			<form action="/action_page.php">
+			<p id="demo"></p>
+			<form id="form1">
 				<p class="goLeft">If already registered sign in below!</p>
-				<label for="username">User name:</label><br>
-				<input type="text" id="username" name="username">
+				User name:<br>
+				<input type="text" name="Uname" id="usernameUP">
 				<br>
-				<label for="email">Email Address:</label> <br>
-				<input type="text" id="email" name="email">
+				Email Address:<br>
+				<input type="text" name="Uemail" id="emailUP" >
 				<br>
-				<label for="password">Password:</label><br>
-				<input type="text" name="password">
+				Password:<br>
+				<input type="text" name="passwordUP" id="passwordUP">
 				<br><br>
-				<input type="submit" value="Submit">
-				<br><br>
+
+				<button type="button" onclick="store()">Click it</button>
 			</form>			
 		</div>
 	</div>
 	<div>
 		<div class="inputFrame" style="border-color:#ffc2b3;">
 		<h2>SIGN IN</h2>
-		<form action="/action_page.php">
-<!--			<img src="Pictures/Signup.png" style="width:35%;float:left;" class= "goLeft"/>-->
-			<label for="email/Username">Email or User name:</label><br>
-			<input type="text" id="email/Username" name="emailorname">
+
+		<p id="demo2">Here</p>
+	    <form id="form2">
+			Email or User name:<br>
+			<input type="text" id="emailorUsername" name="emailorname">
 			<br>
-			<label for="password">Password:</label><br>
-			<input type="text" id="password" name="password">
+			Password:<br>
+			<input type="text" id="password2" name="password2">
 			<br><br>
-			<input type="submit" value= "Submit"><br><br>
+<!--			<input type="submit" value= "Submit"><br><br>-->
+<!--			<a href="Home_Registered.html">-->
+				<button type="button" onclick="check()" >Sign in</button>
 		</form>
 		</div>
 	</div>

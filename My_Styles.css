@@ -1,4 +1,8 @@
-/****************** CSS PAGE FOR HOME(NOTREGISTERED/SIGNED IN) **********************/
+
+/* Attributes concerning navbar */
+.navbarFrame{
+    height: 63px;
+}
 
 /* Text attributes in navbar */
 
@@ -21,11 +25,11 @@
 	font-size: 30px;
 }
 
-.homeBG {
-	background-color: #397B9E;
-	/* Green */
-}
 
+.homeBG{
+     background-color: #264d73; /* Green */
+
+  
 .homeBanner{
 	background-image:url(Pictures/HomeBanner2.jpg);
 	width:100%;
@@ -36,7 +40,7 @@
 	color:white;
 	font-size: 2.5em;
 	font-family:sans-serif;
-	padding:50px
+	padding:50px;
 	padding-top:60px;
 }
 
@@ -56,6 +60,7 @@
 	margin-bottom: .5em;
 	font-family: "Georgia, serif";
 }
+
 
 #myButton {
 	color: white;
@@ -125,9 +130,17 @@
 	text-align: center;
 }
 
+.schBox{
+	background-color:aliceblue;
+	border:2px solid black;
+    border-radius: 10px;
+    padding:15px;
+    width:80%;
+    text-align: left;
+    margin-bottom: 20px;
+}
 
 /* Style the buttons that are used to open the tab content */
-
 .tab button {
 	background-color: inherit;
 	border: none;
@@ -157,10 +170,8 @@
 /* Style the tab content */
 
 .tabcontent {
-	display: visible;
+	display: none;
 	padding: 6px 12px;
-	border: 1px solid #ccc;
-	border-top: none;
 }
 
 footer {
